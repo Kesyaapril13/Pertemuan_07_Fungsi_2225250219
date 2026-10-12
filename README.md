@@ -1,14 +1,16 @@
 Pertemuan 07 — Fungsi Python
 
 Nama: Kesya Nur Aprilliani
+
 NIM: 2225250219
-Kelas: 3E
+
+kelas: 3E
 
 1. Tujuan
 Praktik ini bertujuan memahami penggunaan fungsi, parameter, return value, dan scope variabel dalam Python. Program dibuat secara modular agar setiap operasi matematika memiliki fungsi tersendiri, mudah diuji, dan dapat digunakan kembali.
 
-2. Struktur Folder
-pertemuan-07-fungsi-NIM/
+2. Struktur Folder pertemuan-07-fungsi-2225250219
+
 ├── README.md
 ├── .gitignore
 ├── latihan/
@@ -41,12 +43,13 @@ python3 praktik/utilitas_matematika.py
 Program utama menggunakan seleksi "if-elif-else" untuk menjalankan fungsi sesuai pilihan pengguna. Validasi dilakukan agar nilai n pada fungsi jumlah dan faktorial merupakan bilangan bulat nonnegatif.
 
 5. Hasil Pengujian
-No.| Pengujian| Hasil yang Diharapkan| Status
-1| Luas persegi panjang (8, 5)| 40| Sesuai
-2| Luas segitiga (10, 6)| 30.0| Sesuai
-3| Jumlah 1 sampai 10| 55| Sesuai
-4| Faktorial 5| 120| Sesuai
-5| Faktorial 0| 1| Sesuai
+
+No.| Pengujian                  | Hasil yang Diharapkan| Status
+1  | Luas persegi panjang (8, 5)| 40                   | Sesuai
+2  | Luas segitiga (10, 6)      | 30.0                 | Sesuai
+3  | Jumlah 1 sampai 10         | 55                   | Sesuai
+4  | Faktorial 5                | 120                  | Sesuai
+5  | Faktorial 0                | 1                    | Sesuai
 
 Catatan: status pengujian perlu dikonfirmasi setelah setiap test case dijalankan di VS Code.
 
