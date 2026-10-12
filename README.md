@@ -1,57 +1,42 @@
-Pertemuan 07 — Fungsi Python
+# Pertemuan 07 Fungsi Python
 
 Nama: Kesya Nur Aprilliani
-
 NIM: 2225250219
+Kelas: 3E
 
-kelas: 3E
+## Tujuan
 
-1. Tujuan
-Praktik ini bertujuan memahami penggunaan fungsi, parameter, return value, dan scope variabel dalam Python. Program dibuat secara modular agar setiap operasi matematika memiliki fungsi tersendiri, mudah diuji, dan dapat digunakan kembali.
+Mempelajari dan menerapkan fungsi dalam Python untuk membuat program yang lebih terstruktur dan mudah dipahami. Materi ini mencakup penggunaan parameter, nilai kembalian ("return"), scope variabel, serta pengujian fungsi untuk memastikan program berjalan sesuai dengan hasil yang diharapkan.
 
-2. Struktur Folder pertemuan-07-fungsi-2225250219
+## Cara Menjalankan
 
-├── README.md
-├── .gitignore
-├── latihan/
-│   ├── 01_salam.py
-│   ├── 02_luas_persegi_panjang.py
-│   ├── 03_jumlah_n.py
-│   ├── 04_statistik_sederhana.py
-│   └── 05_scope.py
-└── praktik/
-    └── utilitas_matematika.py
+1. Buka folder proyek di Visual Studio Code.
+2. Buka menu Terminal, lalu pilih New Terminal.
+3. Jalankan program dengan perintah berikut:
 
-3. Cara Menjalankan:
-
-1. Buka folder proyek melalui VS Code.
-2. Buka Terminal.
-3. Jalankan perintah berikut dari folder utama proyek:
 python praktik/utilitas_matematika.py
-Jika sistem menggunakan perintah "python3", jalankan:
-python3 praktik/utilitas_matematika.py
-4. Pilih operasi sesuai menu.
-5. Masukkan data yang diminta dan periksa hasilnya.
 
-4. Struktur Fungsi
-- "luas_persegi_panjang(p, l)": menghitung luas persegi panjang dan mengembalikan hasil dengan "return".
-- "luas_segitiga(a, t)": menghitung luas segitiga dan mengembalikan hasil.
-- "jumlah_n(n)": menghitung jumlah bilangan dari 1 sampai n menggunakan perulangan.
-- "faktorial(n)": menghitung faktorial menggunakan perulangan.
-- "tampilkan_menu()": menampilkan pilihan operasi kepada pengguna.
+4. Tekan Enter.
+5. Lihat hasil keluaran program pada Terminal
 
-Program utama menggunakan seleksi "if-elif-else" untuk menjalankan fungsi sesuai pilihan pengguna. Validasi dilakukan agar nilai n pada fungsi jumlah dan faktorial merupakan bilangan bulat nonnegatif.
+## Struktur Fungsi
 
-5. Hasil Pengujian
+Program menggunakan fungsi untuk membagi proses menjadi bagian-bagian yang lebih sederhana. Setiap fungsi memiliki nama dan dapat menggunakan parameter serta nilai "return" sesuai kebutuhan.
 
-No.| Pengujian                  | Hasil yang Diharapkan| Status
-1  | Luas persegi panjang (8, 5)| 40                   | Sesuai
-2  | Luas segitiga (10, 6)      | 30.0                 | Sesuai
-3  | Jumlah 1 sampai 10         | 55                   | Sesuai
-4  | Faktorial 5                | 120                  | Sesuai
-5  | Faktorial 0                | 1                    | Sesuai
+## Hasil Pengujian
 
-Catatan: status pengujian perlu dikonfirmasi setelah setiap test case dijalankan di VS Code.
+Pengujian dilakukan untuk memastikan setiap fungsi menghasilkan output sesuai dengan perhitungan yang diharapkan.
 
-6. Refleksi
-Melalui praktik ini, saya memahami bahwa fungsi dapat memisahkan program menjadi bagian-bagian yang mempunyai tugas jelas. Parameter digunakan untuk menerima data, sedangkan "return" mengembalikan hasil perhitungan agar dapat digunakan oleh program utama. Scope membantu membedakan variabel lokal dan global. Pengujian dengan beberapa test case juga membantu memastikan hasil program sesuai dengan yang diharapkan.
+No.| Input| Hasil yang Diharapkan| Hasil Aktual| Status
+1| Panjang = 8, lebar = 5| Luas persegi panjang = 40| 40.0| Berhasil
+2| Alas = 10, tinggi = 6| Luas segitiga = 30| 30.0| Berhasil
+3| n = 10| Jumlah bilangan 1 sampai 10 = 55| 55| Berhasil
+4| n = 5| Faktorial 5 = 120| 120| Berhasil
+5| n = 0| Faktorial 0 = 1| 1| Berhasil
+6| n = -1| Program menolak nilai negatif| Pesan kesalahan validasi ditampilkan| Berhasil
+
+Kesimpulan: Berdasarkan pengujian tersebut, fungsi-fungsi pada program praktik menghasilkan nilai sesuai dengan hasil yang diharapkan, termasuk validasi untuk nilai negatif.
+
+# Refleksi
+
+Setelah program dipisahkan menjadi beberapa fungsi, kode menjadi lebih terstruktur dan mudah dipahami. Setiap fungsi dapat diuji secara terpisah sehingga kesalahan lebih mudah ditemukan dan diperbaiki.
